@@ -1,0 +1,66 @@
+/**
+ * Plugin criado por:
+ * Paulo Cezario
+ * https://github.com/phscezario
+ **/
+
+/* Youtube Player*/
+.youtube-player {
+    position: relative;
+    overflow: hidden;
+    max-width: 500px;
+    width: 100%;
+    min-width: 250px;
+    min-height: 375px;
+    background: #000;
+}
+.youtube-player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: transparent;
+}
+.youtube-player img {
+    bottom: 0;
+    display: block;
+    left: 0;
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    height: auto;
+    cursor: pointer;
+    -webkit-transition: .4s all;
+    -moz-transition: .4s all;
+    transition: .4s all;
+}
+.youtube-player:hover img {
+    -webkit-filter: brightness(75%);
+    filter: brightness(75%);
+}
+.youtube-player .play img{
+    width: 64px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);	
+    filter: grayscale(1);	
+}
+.youtube-player:hover .play img{
+    opacity: 1;
+    filter: alpha(opacity=100);
+    filter: grayscale(0);
+}
+.youtube-player:hover .play i{
+    color:#d62422;	
+}
+.youtube-player .play i {
+    color:#000;
+    margin-top: -20px;
+    margin-left: -20px;		
+}
+/* Fim Youtube Player*/
